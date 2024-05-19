@@ -7,7 +7,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+  background-image: url("https://cdn.pixabay.com/photo/2019/09/18/21/31/sea-4487710_640.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

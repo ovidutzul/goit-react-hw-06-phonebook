@@ -1,112 +1,92 @@
+# Phonebook widget made with React and Redux Toolkit.
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) 
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+
 # React homework template
 
-Цей проект був створений за допомогою
-[Create React App](https://github.com/facebook/create-react-app). Для знайомства
-і налаштування додаткових можливостей
-[звернися до документації](https://facebook.github.io/create-react-app/docs/getting-started).
+This project was created with
+[Create React App](https://github.com/facebook/create-react-app). 
+To get acquainted and configure additional features
+[refer to documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Створення репозиторію за шаблоном
+## Preparing a new project
 
-Використовуй цей репозиторій організації GoIT як шаблон для створення репозиторію
-свого проєкта. Для цього натисни на кнопку `«Use this template»` і вибери опцію
-`«Create a new repository»`, як показано на зображенні.
+1. Make sure you have an LTS version of Node.js installed on your computer.
+   [Download and install](https://nodejs.org/en/) if needed.
+2. Clone this repository.
+3. Change the folder name from `react-homework-template` to the name of your project.
+4. Create a new empty GitHub repository.
+5. Open the project in VSCode, launch the terminal and link the project to the GitHub repository 
+  [according to the instructions] (https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories #changing-a-remote-repositorys-url).
+6. Install the project's base dependencies with the `npm install` command.
+7. Start development mode by running the `npm start` command.
+8. Go to [http://localhost:3000](http://localhost:3000) in your browser.
+ This page will automatically reload after saving changes to the project files.
 
-![Creating repo from a template step 1](./assets/template-step-1.png)
+## Deploy
 
-На наступному кроці відкриється сторінка створення нового репозиторію. Заповни поле
-його імені, переконайся що репозиторій публічний, після чого натисни кнопку
-`«Create repository from template»`.
-
-![Creating repo from a template step 2](./assets/template-step-2.png)
-
-Після того як репозиторій буде створено, необхідно перейти в налаштування
-створеного репозиторію на вкладку `Settings` > `Actions` > `General` як
-показано на зображенні.
-
-![Settings GitHub Actions permissions step 1](./assets/gh-actions-perm-1.png)
-
-Проскроливши сторінку до самого кінця, у секції `«Workflow permissions»` вибери
-опцію `«Read and write permissions»` і постав галочку в чекбоксі. Це
-необхідно для автоматизації процесу деплою проєкту.
-
-![Settings GitHub Actions permissions step 2](./assets/gh-actions-perm-2.png)
-
-Тепер у тебе є особистий репозиторій проекту, зі структурою файлів і папок
-репозиторію-шаблону. Далі працюй із ним як із будь-яким іншим особистим репозиторієм,
-клонуй його собі на комп'ютер, пиши код, роби комміти і відправляй їх на
-GitHub.
-
-## Підготовка до роботи
-
-1. Переконайся що на комп'ютері встановлено LTS-версія Node.js.
-   [Завантаж і встанови](https://nodejs.org/en/) її якщо необхідно.
-2. Встанови базові залежності проєкту командою `npm install`.
-3. Запусти режим розробки, виконавши команду `npm start`.
-4. Перейди в браузері за адресою [http://localhost:3000](http://localhost:3000).
-   Ця сторінка буде автоматично перезавантажуватися після збереження змін у файлах проєкту.
-
-## Деплой
-
-Продакшн версія проєкту буде автоматично проходити лінтинг, збиратися і
-деплоїтися на GitHub Pages, у гілку `gh-pages`, щоразу, коли оновлюється
-гілка `main`. Наприклад, після прямого пушу або прийнятого пул-реквесту. Для цього
-необхідно у файлі `package.json` відредагувати поле `homepage`, замінивши
-`your_username` і `your_repo_name` на свої, і відправити зміни на GitHub.
+The production version of the project will automatically be linted, built, 
+and deployed to GitHub Pages, in the `gh-pages` branch, every time the `main` 
+branch is updated. For example, after a direct push or an accepted pull request. 
+To do this, you need to edit the `homepage` field in the `package.json` file, 
+replacing `your_username` and `your_repo_name` with your own, and submit the 
+changes to GitHub.
 
 ```json
 "homepage": "https://your_username.github.io/your_repo_name/"
 ```
 
-Далі необхідно зайти в налаштування GitHub-репозиторію (`Settings` > `Pages`) і
-виставити роздачу продакшн-версії файлів із папки `/root` гілки `gh-pages`, якщо
-це не було зроблено автоматично.
+Next, you need to go to the settings of the GitHub repository (`Settings` > `Pages`) 
+and set the distribution of the production version of files from the `/root` 
+folder of the `gh-pages` branch, if this was not done automatically.
 
 ![GitHub Pages settings](./assets/repo-settings.png)
 
-### Статус деплоя
+### Deployment status
 
-Статус деплою крайнього коміту відображається іконкою біля його ідентифікатора.
+The deployment status of the latest commit is displayed with an icon next to its ID.
 
-- **Жовтий колір** - виконується збірка і деплой проєкту.
-- **Зелений колір** - деплой завершився успішно.
-- **Червоний колір** - під час лінтингу, сборки або деплою сталася помилка.
+- **Yellow color** - the project is being built and deployed.
+- **Green color** - deployment completed successfully.
+- **Red color** - an error occurred during linting, build or deployment.
 
-Детальнішу інформацію про статус можна подивитися, клікнувши на іконку, і
-у вікні, що випадає, перейти за посиланням `Details`.
+More detailed information about the status can be viewed by clicking on the icon, 
+and in the drop-down window, follow the link `Details`.
 
-![Deployment status](./assets/deploy-status.png)
+![Deployment status](./assets/status.png)
 
-### Жива сторінка
-
-Через якийсь час, зазвичай кілька хвилин, живу сторінку можна буде подивитися
-за адресою, вказаною у відредагованій властивості `homepage`. Наприклад, ось
-посилання на живу версію для цього репозиторію
+### Live page
+After some time, usually a couple of minutes, the live page can be viewed at the address 
+specified in the edited `homepage` property. For example, here is a link to a live version for this repository
 [https://goitacademy.github.io/react-homework-template](https://goitacademy.github.io/react-homework-template).
 
-Якщо відкривається порожня сторінка, переконайся, що у вкладці `Console` немає помилок
-пов'язаних із неправильними шляхами до CSS і JS файлів проєкту (**404**). Швидше 
-за все у тебе неправильне значення властивості `homepage` у файлі `package.json`.
+If a blank page opens, make sure there are no errors in the `Console` tab related 
+to incorrect paths to the CSS and JS files of the project (**404**). You most likely 
+have the wrong value for the `homepage` property in the `package.json` file.
 
-### Маршрутизація
-
-Якщо додаток використовує бібліотеку `react-router-dom` для маршрутизації,
-необхідно додатково налаштувати компонент `<BrowserRouter>`, передавши у пропе
-`basename` точну назву твого репозиторію. Слеш на початку рядка обов'язковий.
+### Routing
+If your application uses the `react-router-dom` library for routing, you must 
+additionally configure the `<BrowserRouter>` component by passing the exact name 
+of your repository in the `basename` prop. Slashes at the beginning and end of 
+the line are required.
 
 ```jsx
-<BrowserRouter basename="/your_repo_name">
+<BrowserRouter basename="/your_repo_name/">
   <App />
 </BrowserRouter>
 ```
 
-## Як це працює
+## How it works
 
 ![How it works](./assets/how-it-works.png)
 
-1. Після кожного пушу в гілку `main` GitHub-репозиторія, запускається спеціальний
-   скрипт (GitHub Action) з файла `.github/workflows/deploy.yml`.
-2. Усі файли репозиторію копіюються на сервер, де проект ініціалізується і
-   проходить лінтинг і збірку перед деплоєм.
-3. Якщо всі кроки пройшли успішно, зібрана продакшн-версія файлів проєкту
-   відправляється в гілку `gh-pages`. В іншому випадку, в лозі виконання
-   скрипта буде вказано в чому проблема.
+1. After each push to the `main` branch of the GitHub repository, a special script 
+  (GitHub Action) is launched from the `.github/workflows/deploy.yml` file.
+2. All repository files are copied to the server, where the project is initialized 
+  and linted and built before deployment.
+3. If all steps are successful, the built production version of the project files is 
+  sent to the `gh-pages` branch. Otherwise, the script execution log will indicate 
+  what the problem is.
